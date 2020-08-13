@@ -7,6 +7,7 @@ Final2 contains a function to plot the Endurance of a Gas Engine given a Fuel Ca
 We will begin with file Final Project.
 1st, we are told that we need to present this as a function as opposed to a script.
 Lets set this up as a function.  Our first line should start out as
+
 function
 
 Next, we need to give a name to our function, so after function we will name it
@@ -14,22 +15,30 @@ function PowerTrainPropulsion
 
 Next, we need an equal sign, and we will name our other side PowerVsEfficiency.
 So far we should have
+
 function PowerTrainPropulsion=PowerVsEfficiency
 
 Next, on the right hand side in parenthesis, we need to include all our variables we are given in this file.
 The variables we are given are PowerIn, three constants C0,C1,C2, PowerLoss, PowerOut, and Efficiency.
 Before we write these, we will make some adjustments.
+
 PowerIn will be represented as Pin; PowerLoss will be Ploss; PowerOut will be Pout, and Efficiency will be Y.
 We can now finish our first line by including all our variables as such
+
 function PowerTrainPropulsion=PowerVsEfficiency(Pin,C0,C1,C2,Ploss,Pout,Y)
 
 Now, we will start to give values to our variables listed in the function line, in the same order we listed them.
 We were given the following values:  Pin=[0,125]; C0=.6; C1=.02; C2=.0015; We will list each of these values seperately in this same order on new lines for each one, each line ending in a semicolon ;. We will edit Pin a little bit, and change it to [0:1:125].  This change changes it from 2 distinct values, into an array that includes values 0 all the way to 125, incremented 1 at a time.
 We should now have 
+
 function PowerTrainPropulsion=PowerVsEfficiency(Pin,C0,C1,C2,Ploss,Pout,Y)
+
 Pin=[0:1:125];
+
 C0=.6;
+
 C1=.02;
+
 C2=.0015;
 
 Next we will include the equation for Ploss, which needs some work done to it.  We are given Ploss=C0 + C1*Pin + C2*Pin^2
