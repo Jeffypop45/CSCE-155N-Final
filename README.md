@@ -3,6 +3,8 @@ Final Project for CSCE 155N
 
 ******PLEASE VIEW THIS IN EDIT MODE FOR CLEAR READING******
 
+**Please ignore any Italics lettering**
+
 Contained here are two different matlab.m files named **FinalProject** and **Final2**.
 FinalProject contains a function to plot PowerTrain Propulsion Efficiency as a function of Power being put in.
 Final2 contains a function to plot the Endurance of a Gas Engine given a Fuel Capacity Range.
