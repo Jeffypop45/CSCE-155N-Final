@@ -32,13 +32,9 @@ We were given the following values:  Pin=[0,125]; C0=.6; C1=.02; C2=.0015; We wi
 We should now have 
 
 function PowerTrainPropulsion=PowerVsEfficiency(Pin,C0,C1,C2,Ploss,Pout,Y)
-
 Pin=[0:1:125];
-
 C0=.6;
-
 C1=.02;
-
 C2=.0015;
 
 Next we will include the equation for Ploss, which needs some work done to it.  We are given Ploss=C0 + C1*Pin + C2*Pin^2
