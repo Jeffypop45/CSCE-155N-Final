@@ -3,11 +3,11 @@ Final Project for CSCE 155N
 
 ******PLEASE VIEW THIS IN EDIT MODE FOR CLEAR READING******
 
-Contained here are two different matlab.m files named FinalProject and Final2.
+Contained here are two different matlab.m files named **FinalProject** and **Final2**.
 FinalProject contains a function to plot PowerTrain Propulsion Efficiency as a function of Power being put in.
 Final2 contains a function to plot the Endurance of a Gas Engine given a Fuel Capacity Range.
 
-We will begin with file Final Project.
+We will begin with file **Final Project**.
 1st, we are told that we need to present this as a function as opposed to a script.
 Lets set this up as a function.  Our first line should start out as
 
@@ -158,7 +158,7 @@ This function and file is now completely done, and in Matlab, we can click 'Run'
 
 
 
-Now for the second file, Final2.
+Now for the second file, **Final2**.
 The set up for this will be pretty much the exact same approach as the 1st file, except we will have different function names, different variables, and a different plot to graph.
 
 We can start with function again, like before, but this time, we will change the name after, and the names and variables on the right hand side of the equation.
