@@ -32,13 +32,9 @@ We were given the following values:  Pin=[0,125]; C0=.6; C1=.02; C2=.0015; We wi
 We should now have 
 
 function PowerTrainPropulsion=PowerVsEfficiency(Pin,C0,C1,C2,Ploss,Pout,Y)
-
 Pin=[0:1:125];
-
 C0=.6;
-
 C1=.02;
-
 C2=.0015;
 
 Next we will include the equation for Ploss, which needs some work done to it.  We are given Ploss=C0 + C1*Pin + C2*Pin^2
@@ -47,183 +43,108 @@ We will change this to Ploss=C0 + C1.*Pin + C2.*Pin.^2.
 We now have 
 
 function PowerTrainPropulsion=PowerVsEfficiency(Pin,C0,C1,C2,Ploss,Pout,Y)
-
 Pin=[0:1:125];
-
 C0=.6;
-
 C1=.02;
-
 C2=.0015;
-
 Ploss=C0 + C1.*Pin + C2.*Pin.^2;
 
 Next, we include the equation for Pout, which is given to us as Pout=Pin-Ploss.
-
 Now
 
 function PowerTrainPropulsion=PowerVsEfficiency(Pin,C0,C1,C2,Ploss,Pout,Y)
-
 Pin=[0:1:125];
-
 C0=.6;
-
 C1=.02;
-
 C2=.0015;
-
 Ploss=C0 + C1.*Pin + C2.*Pin.^2;
-
 Pout=Pin-Ploss;
 
 Next we include our variable Y, which represents Efficiency, and is given as Y=Pout/Pin.  Again we need to edit this and include a period(.) before the division symbol.
-
 Y=Pout./Pin
-
 We now have 
 
 function PowerTrainPropulsion=PowerVsEfficiency(Pin,C0,C1,C2,Ploss,Pout,Y)
-
 Pin=[0:1:125];
-
 C0=.6;
-
 C1=.02;
-
 C2=.0015;
-
 Ploss=C0 + C1.*Pin + C2.*Pin.^2;
-
 Pout=Pin-Ploss;
-
 Y=Pout./Pin;
 
  We now are done listing all our variables.  Next step is to set this up in a way that Matlab will plot a graph of what we want.
- 
-The graph we want is PowerVsEfficiency, which will include Power on the x Axis and Efficiency on the Y axis.
- 
-To do this, we first need to set what we want x and y to represent.  
- 
-To do so, we will set x=Pin, and y=Y.
-
+ The graph we want is PowerVsEfficiency, which will include Power on the x Axis and Efficiency on the Y axis.
+ To do this, we first need to set what we want x and y to represent.  
+ To do so, we will set x=Pin, and y=Y.
 Putting this together,, we now have
 
 function PowerTrainPropulsion=PowerVsEfficiency(Pin,C0,C1,C2,Ploss,Pout,Y)
-
 Pin=[0:1:125];
-
 C0=.6;
-
 C1=.02;
-
 C2=.0015;
-
 Ploss=C0 + C1.*Pin + C2.*Pin.^2;
-
 Pout=Pin-Ploss;
-
 Y=Pout./Pin;
-
 x=Pin;
-
 y=Y;
 
 Next we follow this up with plot(x,y).  What this does is, is tell Matlab that we want to make a plot or graph of our listed x and y values.
 
 function PowerTrainPropulsion=PowerVsEfficiency(Pin,C0,C1,C2,Ploss,Pout,Y)
-
 Pin=[0:1:125];
-
 C0=.6;
-
 C1=.02;
-
 C2=.0015;
-
 Ploss=C0 + C1.*Pin + C2.*Pin.^2;
-
 Pout=Pin-Ploss;
-
 Y=Pout./Pin;
-
 x=Pin;
-
 y=Y;
-
 plot(x,y);
 
 The last steps are to include what we want to name our Xaxis, Y axis, and title of our graph.
-
 To do this we can use xlabel, ylabel and title. 
-
 We will write out for example, xlabel, then follow it immediately with('').  Inside the two hyphens, we write out what we want to display on our graph.
 
 We will name these
-
 xlabel('Power In (kW)'); ylabel('Efficiency (%, 1=100%)'); title('Efficiency Vs Power')
 
 We can now include these individually with the rest of our information
 
 function PowerTrainPropulsion=PowerVsEfficiency(Pin,C0,C1,C2,Ploss,Pout,Y)
-
 Pin=[0:1:125];
-
 C0=.6;
-
 C1=.02;
-
 C2=.0015;
-
 Ploss=C0 + C1.*Pin + C2.*Pin.^2;
-
 Pout=Pin-Ploss;
-
 Y=Pout./Pin;
-
 x=Pin;
-
 y=Y;
-
 plot(x,y);
-
 xlabel('Power In (kW)');
-
 ylabel('Efficiency (%, 1=100%)'); 
-
 title('Efficiency Vs Power');
-
 We are now done with our function, so we can write 'end', to tell Matlab that the function is done. 
 
 This will be our finished product
 
 function PowerTrainPropulsion=PowerVsEfficiency(Pin,C0,C1,C2,Ploss,Pout,Y)
-
 Pin=[0:1:125];
-
 C0=.6;
-
 C1=.02;
-
 C2=.0015;
-
 Ploss=C0 + C1.*Pin + C2.*Pin.^2;
-
 Pout=Pin-Ploss;
-
 Y=Pout./Pin;
-
 x=Pin;
-
 y=Y;
-
 plot(x,y);
-
 xlabel('Power In (kW)');
-
 ylabel('Efficiency (%, 1=100%)'); 
-
 title('Efficiency Vs Power');
-
 end
 
 This function and file is now completely done, and in Matlab, we can click 'Run', and we will be given a graph, as well as our values for efficiency.  
@@ -350,7 +271,7 @@ ylabel('Endurance');
 title('Endurance as a function of Fuel Capacity');
 end
 
-This is our finished product.  We can then tell Matlab to run it, and it will plot a graph of the information we gave it.  
+This is our finished product.  We can then tell Matlab to run it, and it will plot a graph of the information we gave it, and also include the values for endurance as a function of fuel capacity.
 
 
 
