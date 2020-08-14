@@ -209,11 +209,11 @@ Cf=[25:1:100];
 Rf=P./(Eg.*TE);
 X=Cf./Rf;
 
-% We now are done listing all our variables.  Next step is to set this up in a way that Matlab will plot a graph of what we want.
-% The graph we want is FuelCapacityVsEndurance, which will include FuelCapacity on the x Axis and Enurance on the Y axis.
-% To do this, we first need to set what we want x and y to represent.  
-% To do so, we will set x=Cf, and y=X.
-%Putting this together, we now have
+We now are done listing all our variables.  Next step is to set this up in a way that Matlab will plot a graph of what we want.
+The graph we want is FuelCapacityVsEndurance, which will include FuelCapacity on the x Axis and Enurance on the Y axis.
+To do this, we first need to set what we want x and y to represent.  
+To do so, we will set x=Cf, and y=X.
+Putting this together, we now have
 
 function GasEngineRange= FuelCapacityVsEndurance(P,Eg,TE,Cf,Rf,X)
 P=298;
@@ -260,7 +260,7 @@ xlabel('Fuel Capacity(Liters)');
 ylabel('Endurance');
 title('Endurance as a function of Fuel Capacity');
 
-We are now done with all our information and can just put an 'end' to end the function
+We are now done with all our information and can just put an 'end' to end the function.
 
 function GasEngineRange= FuelCapacityVsEndurance(P,Eg,TE,Cf,Rf,X)
 P=298;
