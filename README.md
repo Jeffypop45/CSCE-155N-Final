@@ -78,11 +78,11 @@ Ploss=C0 + C1.*Pin + C2.*Pin.^2;
 Pout=Pin-Ploss;
 Y=Pout./Pin;
 
- We now are done listing all our variables.  Next step is to set this up in a way that Matlab will plot a graph of what we want.
- The graph we want is PowerVsEfficiency, which will include Power on the x Axis and Efficiency on the Y axis.
- To do this, we first need to set what we want x and y to represent.  
- To do so, we will set x=Pin, and y=Y.
-Putting this together,, we now have
+We now are done listing all our variables.  Next step is to set this up in a way that Matlab will plot a graph of what we want.
+The graph we want is PowerVsEfficiency, which will include Power on the x Axis and Efficiency on the Y axis.
+To do this, we first need to set what we want x and y to represent.  
+To do so, we will set x=Pin, and y=Y.
+Putting this together, we now have
 
 function PowerTrainPropulsion=PowerVsEfficiency(Pin,C0,C1,C2,Ploss,Pout,Y)
 Pin=[0:1:125];
@@ -170,6 +170,7 @@ In this, we are given variables Engine Power, Gasoline energy, Thermal Efficienc
 However, we will rename these variables as follows
 Engine Power=P; Gasoline energy=Eg;Thermal Efficiency=TE; fuel Capacity= Cf; Fuel Flow= Rf; and Endurance=X
 We can now state our function line as
+
 function GasEngineRange= FuelCapacityVsEndurance(P,Eg,TE,Cf,Rf,X)
 
 Next, based off of the values we were given in the instructions for each variable, we will include each variable seperately, seperated by line and semicolon 
